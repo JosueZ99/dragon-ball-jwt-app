@@ -5,11 +5,11 @@ import Image from "next/image";
 export default function CharacterCard({ character }) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="relative h-64">
+      <div className="relative h-64 flex items-center justify-center">
         <img
           src={character.image || "/api/placeholder/300/400"}
           alt={character.name}
-          className="w-full h-full object-cover"
+          className="h-full object-cover"
           onError={(e) => {
             e.target.src = "/api/placeholder/300/400";
           }}

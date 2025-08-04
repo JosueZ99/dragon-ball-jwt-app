@@ -101,11 +101,11 @@ export default function CharacterDetail() {
 
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="md:flex">
-          <div className="md:w-1/3">
+          <div className="md:w-1/3 flex items-start justify-center p-4">
             <img
               src={character.image || "/api/placeholder/400/600"}
               alt={character.name}
-              className="w-full h-96 md:h-full object-cover"
+              className=" w-full h-fit object-cover"
               onError={(e) => {
                 e.target.src = "/api/placeholder/400/600";
               }}
@@ -179,13 +179,15 @@ export default function CharacterDetail() {
                         <h4 className="font-semibold text-gray-800">
                           {transformation.name}
                         </h4>
+                        <div className="flex items-center justify-center">
                         {transformation.image && (
                           <img
                             src={transformation.image}
                             alt={transformation.name}
-                            className="w-full h-32 object-cover rounded mt-2"
+                            className="h-52 object-fit rounded mt-2"
                           />
                         )}
+                        </div>
                       </div>
                     ))}
                   </div>
