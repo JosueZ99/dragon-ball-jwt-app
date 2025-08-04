@@ -85,7 +85,7 @@ Crear archivo `.env.local` en la raíz del proyecto:
 ```env
 JWT_SECRET=tu_clave_secreta_muy_segura_aqui_2024
 JWT_EXPIRES_IN=7d
-DATABASE_URL=postgresql://dragon_user:dragon_password_2024@localhost:5432/dragon_ball_app
+DATABASE_URL=postgres://dragon_user:dragon_password_2024@localhost:5432/dragon_ball_app
 NEXT_PUBLIC_API_URL=http://localhost:3000
 NODE_ENV=development
 ```
